@@ -9,7 +9,7 @@ while true:
     #Read the current node's output array.
     #Perform the outputs needed.
     #Take the prompt and play it(after conversion to sound)
-    #If the node is a leaf, exit and end 
+    #If the node is a leaf, exit and end
     #Await response
     #use detection tools to identify the path
     #move to the currentnode.left or .right depending
