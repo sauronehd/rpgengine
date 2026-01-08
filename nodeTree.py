@@ -18,7 +18,7 @@
 from nodeClass import outputNode
 import detectiontools
 
-class idiotZone:
+class nodeTree:
     def __init__(self):
         print("node tree pulled")
     #basic example of how this might look
