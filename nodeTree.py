@@ -21,10 +21,29 @@ import detectiontools
 class nodeTree:
     def __init__(self):
         print("node tree pulled")
+
+
     #basic example of how this might look
     beginning = outputNode()
     beginning.prompt = ("Would you like to go left to candy or "
                         "right to the telephone?")
     beginning.leftKey = ["candy, left"]
     beginning.rightKey = ["telephone, right"]
-    beginning.outputs = [pinouts("fan",2)]
+    beginning.outputs = [("fan",2)]
+    candy = outputNode()
+    beginning.left = candy
+    candy.prompt =("CANDY!!!!!!")
+    candy.outputs = [("heat",1)]
+    telephone = outputNode()
+    beginning.right = telephone
+    telephone.prompt = ("I love calling random people")
+    telephone.outputs = [("audio", 2)]
+
+def printNode(node:nodeClass.outputNode):
+    print(node.prompt)
+    print(node.rightKey)
+    print(node.leftKey)
+    print(node.outputs)
+
+
+

@@ -1,14 +1,6 @@
 import detectiontools
-from  dataclasses import dataclass
 
 class outputNode:
-    #Should force people to only use the correct pins, as well as gives more descriptive names to them
-    #ALso forces only off/low/high for easier control.
-    @dataclass
-    class pinouts:
-        pin: detectiontools.pins
-        signal: detectiontools.outputs
-
     #the game is designed so the player may either go left or right.
     #Put keywords you think would signify the path the user chose.
     leftKey = []
@@ -18,9 +10,9 @@ class outputNode:
     #This is inherently easier than recording these snippets ourselves
     prompt = ""
 
-    #outputs will be an array of pinouts.
+    #outputs will be an array of tuples. The output should be a pin, and its output.
     #can have multiple outputs if you want
-    outputs = Array[pinouts]
+    outputs = []
 
 
 

@@ -10,17 +10,6 @@ class detectionTools():
         right = 1
         unknown = 2
 
-    class pins(Enum):
-        #will add and change as we go
-        shaker = 0
-        audio = 1
-        sprinkler = 2
-
-    class outputs(Enum):
-        off = 0
-        low = 1
-        high =2
-
 
     negatives = ["don't","won't","will not",
                  "shouldn't","should not"]
@@ -37,6 +26,9 @@ class detectionTools():
     #I think that given the limitations, it is fine.
     def evaluateChoice(self,leftKey:Array[String],
                        rightKey:Array[String],response:string):
+
+        if ifcontaintains(leftKey,response) & ifcontaintains(rightKey,response):
+            return choice.unknown
         if ifcontains(negatives,response):
             #this code will invert things
             if ifconains(rightKey,response):

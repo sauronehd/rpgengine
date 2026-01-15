@@ -1,0 +1,1 @@
+#use this to make callable functions for outputs(fans, heater, ect)

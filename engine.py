@@ -1,14 +1,19 @@
 import detectiontools
 import nodeClass
-import nodeTree
+from nodeTree import *
+import pinCalls
 
-currentNode = idiotZone.beginning
+currentNode = nodeTree.beginning
 
-while true:
-    pass
+printNode(currentNode)
+currentNode = currentNode.left
+printNode(currentNode)
+currentNode = nodeTree.beginning
+currentNode = currentNode.right
+printNode(currentNode)
     #Read the current node's output array.
     #Perform the outputs needed.
-    #Take the prompt and and convert to sound, then play
+    #Take the prompt and convert to sound, then play
     #If the node is a leaf, exit and end
     #Else, Await response
     #use detection tools to identify the path
