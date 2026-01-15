@@ -15,7 +15,8 @@
 #like we did poker bots, and you can swap out which one is loaded. This system is not
 #entirely robust, so simply replacing with their script through copy+paste may be the best method.
 #ALWAYS MAKE SURE THE ROOT NODE IS CALLED BEGINNING! THE ENGINE WILL NOT WORK WITHOUT THIS
-from nodeClass import outputNode
+
+from nodeClass import *
 import detectiontools
 
 class nodeTree:
@@ -27,8 +28,8 @@ class nodeTree:
     beginning = outputNode()
     beginning.prompt = ("Would you like to go left to candy or "
                         "right to the telephone?")
-    beginning.leftKey = ["candy, left"]
-    beginning.rightKey = ["telephone, right"]
+    beginning.leftKey = ["candy", "left"]
+    beginning.rightKey = ["telephone", "right"]
     beginning.outputs = [("fan",2)]
     candy = outputNode()
     beginning.left = candy
@@ -38,8 +39,8 @@ class nodeTree:
     beginning.right = telephone
     telephone.prompt = ("I love calling random people")
     telephone.outputs = [("audio", 2)]
-
-def printNode(node:nodeClass.outputNode):
+#disregaard unresolved reference - seems to work fine in temrinal
+def printNode(node:outputNode):
     print(node.prompt)
     print(node.rightKey)
     print(node.leftKey)

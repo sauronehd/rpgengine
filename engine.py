@@ -1,16 +1,23 @@
-import detectiontools
-import nodeClass
+from detectiontools import *
 from nodeTree import *
-import pinCalls
 
 currentNode = nodeTree.beginning
 
-printNode(currentNode)
-currentNode = currentNode.left
-printNode(currentNode)
-currentNode = nodeTree.beginning
-currentNode = currentNode.right
-printNode(currentNode)
+#while True:
+print(currentNode.prompt)
+print("What would you like to do?")
+response = input("> ")
+path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
+while path == choice.unknown:
+    print("Sorry, I didn't understand that.")
+    print("What would you like to do?")
+    response = input("> ")
+    path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
+print(path)
+
+
+
+
     #Read the current node's output array.
     #Perform the outputs needed.
     #Take the prompt and convert to sound, then play
