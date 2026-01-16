@@ -3,21 +3,48 @@ from nodeTree import *
 
 currentNode = nodeTree.beginning
 
-#while True:
-print(currentNode.prompt)
-print("What would you like to do?")
-response = input("> ")
-path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
-while path == choice.unknown:
-    print("Sorry, I didn't understand that.")
+while True:
+    #replac with pinCalls functions
+    print(currentNode.outputs)
+
+    #replace with tts code
+    print(currentNode.prompt)
+
+    #This is placed so that you will hear and experience the final outputs before the game ends
+    if getattr(currentNode, 'left', None) is None and getattr(currentNode, 'right', None) is None:
+        break
+
+    #replace with tts code
     print("What would you like to do?")
+
+    #replace with mike stt input
     response = input("> ")
+
     path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
-print(path)
+    while path == choice.unknown:
+        #replace with tts output
+        print("Sorry, I didn't understand that.")
+        print("What would you like to do?")
+
+        #replace with stt input mike
+        response = input("> ")
+
+        path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
+
+    if path == choice.left:
+        currentNode = currentNode.left
+        #print("i think left exists guys")
+    elif path == choice.right:
+        currentNode = currentNode.right
+        #print("I think right exists guys")
+    else:
+        print("Error: Choice is extraeneoues value:")
+        print(path)
 
 
 
 
+print("Goodbye")
     #Read the current node's output array.
     #Perform the outputs needed.
     #Take the prompt and convert to sound, then play

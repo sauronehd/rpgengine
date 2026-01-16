@@ -18,38 +18,38 @@ negatives = ["don't","won't","will not","shouldn't","should not","would not","no
 def evaluateChoice(leftKey:[str],rightKey:[str],response:str):
 
     if ifcontains(leftKey,response) and ifcontains(rightKey,response):
-        print("both")
+        #print("both")
         return choice.unknown
     if ifcontains(negatives,response):
         #this code will invert things
-        print("negative")
+        #print("negative")
         if ifcontains(rightKey,response):
-            print("negative right, return left")
+            #print("negative right, return left")
             return choice.left
         elif ifcontains(leftKey,response):
-            print("negative left, return right")
+            #print("negative left, return right")
             return choice.right
         else:
-            print("negative, no keywords")
+            #print("negative, no keywords")
             return choice.unknown
     else:
         #read as if normal
-        print("no negatives")
+        #print("no negatives")
         if ifcontains(rightKey,response):
-            print("Normal right")
+            #print("Normal right")
             return choice.right
         elif ifcontains(leftKey,response):
-            print("Normal left")
+            #print("Normal left")
             return choice.left
         else:
-            print("normal, no keywords")
+            #print("normal, no keywords")
             return choice.unknown
 
 
 def ifcontains(keys:[str], response:str):
     for key in keys:
         if key in response:
-            print("contains: "+key)
+            #print("contains: "+key)
             return True
     return False
 
