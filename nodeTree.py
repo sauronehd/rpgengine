@@ -37,9 +37,20 @@ class nodeTree:
     candy.outputs = [("heat",1)]
     telephone = outputNode()
     beginning.right = telephone
-    telephone.prompt = ("I love calling random people")
+    telephone.prompt = ("Would you like to turn the dial left or right?")
     telephone.outputs = [("audio", 2)]
-#disregaard unresolved reference - seems to work fine in temrinal
+    telephone.rightKey = ["right"]
+    telephone.leftKey = ["left"]
+    rightDial = outputNode()
+    telephone.right = rightDial
+    rightDial.prompt = ("You have called Mico. Sorry about that")
+    rightDial.outputs = [("audio", 8)]
+    leftDial = outputNode()
+    telephone.left = leftDial
+    leftDial.prompt = ("YOu have called barbara. Yay!")
+    leftDial.outputs = [("Audio", 1)]
+
+
 def printNode(node:outputNode):
     print(node.prompt)
     print(node.rightKey)

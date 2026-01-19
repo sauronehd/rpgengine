@@ -1,6 +1,16 @@
 from detectiontools import *
 from nodeTree import *
+from pinCalls import *
 
+# Read the current node's output array.
+# Perform the outputs needed.
+# Take the prompt and convert to sound, then play
+# If the node is a leaf, exit and end
+# Else, Await response
+# use detection tools to identify the path
+# move to the currentnode.left or .right depending
+# Restate the prompt if needed
+# Move to appropriate node and return to beginnning of loop.
 currentNode = nodeTree.beginning
 
 while True:
@@ -33,24 +43,14 @@ while True:
 
     if path == choice.left:
         currentNode = currentNode.left
-        #print("i think left exists guys")
     elif path == choice.right:
         currentNode = currentNode.right
-        #print("I think right exists guys")
     else:
-        print("Error: Choice is extraeneoues value:")
+        print("Error: Choice is extraneous value:")
         print(path)
 
 
 
 
 print("Goodbye")
-    #Read the current node's output array.
-    #Perform the outputs needed.
-    #Take the prompt and convert to sound, then play
-    #If the node is a leaf, exit and end
-    #Else, Await response
-    #use detection tools to identify the path
-    #move to the currentnode.left or .right depending
-    #Restate the prompt if needed
-    #Move to appropriate node and return to beginnning of loop.
+
