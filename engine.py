@@ -17,6 +17,7 @@ import pyttsx3
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
 engine = pyttsx3.init()
+engine.setProperty('rate', 125)
 
 
 while True:
