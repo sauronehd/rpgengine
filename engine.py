@@ -31,6 +31,8 @@ while True:
 
     #replace with mike stt input
     response = record_transcribe(model)
+    print("The repsonse is: ")
+    print(response)
 
     path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
     while path == choice.unknown:
