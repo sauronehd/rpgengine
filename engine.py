@@ -2,6 +2,7 @@ from detectiontools import *
 from nodeTree import *
 from pinCalls import *
 from audioFuncs import *
+import whisper
 
 # Read the current node's output array.
 # Perform the outputs needed.
@@ -13,7 +14,7 @@ from audioFuncs import *
 # Restate the prompt if needed
 # Move to appropriate node and return to beginnning of loop.
 currentNode = nodeTree.beginning
-
+model = whisper.load_model("base")
 while True:
     #replac with pinCalls functions
     print(currentNode.outputs)
@@ -29,7 +30,7 @@ while True:
     print("What would you like to do?")
 
     #replace with mike stt input
-    response = record_transcribe()
+    response = record_transcribe(model)
 
     path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
     while path == choice.unknown:
@@ -38,7 +39,7 @@ while True:
         print("What would you like to do?")
 
         #replace with stt input mike
-        response = record_transcribe()
+        response = record_transcribe(model)
 
         path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
 

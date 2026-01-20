@@ -2,7 +2,7 @@ import sounddevice as sd
 import whisper
 
 
-def record_transcribe():
+def record_transcribe(model):
     duration = 5
     sample_rate = 16000
 
@@ -18,7 +18,7 @@ def record_transcribe():
     audio = audio.flatten()
 
     # Load model
-    model = whisper.load_model("base")
+
 
     # Transcribe directly from numpy array
     result = model.transcribe(audio, fp16=False)
