@@ -1,6 +1,7 @@
 from detectiontools import *
 from nodeTree import *
 from pinCalls import *
+from audioFuncs import *
 
 # Read the current node's output array.
 # Perform the outputs needed.
