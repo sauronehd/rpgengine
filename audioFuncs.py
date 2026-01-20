@@ -1,6 +1,6 @@
 import sounddevice as sd
 import whisper
-
+import pyttsx3
 
 def record_transcribe(model):
     duration = 5
@@ -24,3 +24,7 @@ def record_transcribe(model):
     result = model.transcribe(audio, fp16=False)
 
     return result["text"]
+
+def compSpeak(engine,text):
+    engine.say(text)
+    engine.runAndWait()

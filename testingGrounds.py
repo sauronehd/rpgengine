@@ -1,4 +1,6 @@
 from audioFuncs import *
+engine = pyttsx3.init()
+
 print("commecning test")
 
-print(record_transcribe())
+compSpeak(engine,"hello")

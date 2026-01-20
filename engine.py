@@ -3,6 +3,7 @@ from nodeTree import *
 from pinCalls import *
 from audioFuncs import *
 import whisper
+import pyttsx3
 
 # Read the current node's output array.
 # Perform the outputs needed.
@@ -15,12 +16,14 @@ import whisper
 # Move to appropriate node and return to beginnning of loop.
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
+engine = pyttsx3.init()
+
 while True:
     #replac with pinCalls functions
     print(currentNode.outputs)
 
     #replace with tts code
-    print(currentNode.prompt)
+    compSpeak(engine,currentNode.prompt)
 
     #This is placed so that you will hear and experience the final outputs before the game ends
     if getattr(currentNode, 'left', None) is None and getattr(currentNode, 'right', None) is None:
