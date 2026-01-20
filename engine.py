@@ -18,6 +18,7 @@ currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
 engine = pyttsx3.init()
 
+
 while True:
     #replac with pinCalls functions
     print(currentNode.outputs)

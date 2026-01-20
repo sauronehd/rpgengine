@@ -1,12 +1,7 @@
 import pyttsx3
+engine = pyttsx3.init() # object creation
 
-engine = pyttsx3.init()
-voices = engine.getProperty('voices')
 
-for voice in voices:
-    print(f"ID: {voice.id}")
-    print(f"Name: {voice.name}")
-    print(f"Languages: {voice.languages}")
-    print(f"Gender: {voice.gender}")
-    print(f"Age: {voice.age}")
-    print("-" * 50)
+rate = engine.getProperty('rate')   # getting details of current speaking rate
+print (rate)                        # printing current voice rate
+engine.setProperty('rate', 125)     # setting up new voice rate
