@@ -14,7 +14,7 @@ import whisper
 # Restate the prompt if needed
 # Move to appropriate node and return to beginnning of loop.
 currentNode = nodeTree.beginning
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 while True:
     #replac with pinCalls functions
     print(currentNode.outputs)
