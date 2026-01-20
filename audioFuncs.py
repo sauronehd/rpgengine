@@ -1,24 +1,26 @@
 import sounddevice as sd
-import numpy as np
-from scipy.io.wavfile import write
 import whisper
 
+
 def record_transcribe():
-    # Record audio
-    duration = 3  # seconds
-    sample_rate = 16000  # Hz
-    model = whisper.load_model("base")
+    duration = 5
+    sample_rate = 16000
 
     print("Recording...")
     audio = sd.rec(int(duration * sample_rate),
                    samplerate=sample_rate,
                    channels=1,
-                   dtype='int16')
-
-    sd.wait()  # Wait until recording is finished
+                   dtype='float32')  # Changed to float32
+    sd.wait()
     print("Recording finished")
 
-    write('output.wav', sample_rate, audio)
+    # Flatten the audio array and normalize
+    audio = audio.flatten()
 
-    result = model.transcribe("output.wav")
+    # Load model
+    model = whisper.load_model("base")
+
+    # Transcribe directly from numpy array
+    result = model.transcribe(audio, fp16=False)
+
     return result["text"]
