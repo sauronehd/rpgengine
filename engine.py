@@ -29,7 +29,7 @@ while True:
     print("What would you like to do?")
 
     #replace with mike stt input
-    response = input("> ")
+    response = record_transcribe()
 
     path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
     while path == choice.unknown:
@@ -38,7 +38,7 @@ while True:
         print("What would you like to do?")
 
         #replace with stt input mike
-        response = input("> ")
+        response = record_transcribe()
 
         path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
 
