@@ -11,14 +11,12 @@ def record_transcribe(model):
     audio = sd.rec(int(duration * sample_rate),
                    samplerate=sample_rate,
                    channels=1,
-                   dtype='float32')  # Changed to float32
+                   dtype='float32')
     sd.wait()
     print("Recording finished")
 
     # Flatten the audio array and normalize
     audio = audio.flatten()
-
-    # Load model
 
 
     # Transcribe directly from numpy array

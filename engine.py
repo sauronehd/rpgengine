@@ -14,6 +14,7 @@ import pyttsx3
 # move to the currentnode.left or .right depending
 # Restate the prompt if needed
 # Move to appropriate node and return to beginnning of loop.
+
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
 engine = pyttsx3.init()
@@ -24,17 +25,12 @@ while True:
     #replac with pinCalls functions
     print(currentNode.outputs)
 
-    #replace with tts code
     compSpeak(engine,currentNode.prompt)
 
     #This is placed so that you will hear and experience the final outputs before the game ends
     if getattr(currentNode, 'left', None) is None and getattr(currentNode, 'right', None) is None:
         break
 
-    #replace with tts code
-    print("What would you like to do?")
-
-    #replace with mike stt input
     response = record_transcribe(model)
     print("The repsonse is: ")
     print(response)
@@ -47,6 +43,8 @@ while True:
 
         #replace with stt input mike
         response = record_transcribe(model)
+        print("The repsonse is: ")
+        print(response)
 
         path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
 
