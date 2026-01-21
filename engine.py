@@ -42,8 +42,8 @@ while True:
     path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
     while path == choice.unknown:
         #replace with tts output
-        print("Sorry, I didn't understand that.")
-        print("What would you like to do?")
+        compSpeak(engine,"Sorry, I didnt understand that")
+        compSpeak(engine,"What would you like to do?")
 
         #replace with stt input mike
         response = record_transcribe(model)
@@ -58,8 +58,6 @@ while True:
         print("Error: Choice is extraneous value:")
         print(path)
 
-
-
-
+engine.stop()
 print("Goodbye")
 
