@@ -32,6 +32,7 @@ while True:
         break
 
     response = record_transcribe(model)
+    response = response.lower()
     print("The repsonse is: ")
     print(response)
 
