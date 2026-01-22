@@ -19,7 +19,7 @@ currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
 engine = pyttsx3.init()
 engine.setProperty('rate', 125)
-
+compSpeak(engine,"") # this clear some lag
 
 while True:
     #replac with pinCalls functions
