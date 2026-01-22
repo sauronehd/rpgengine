@@ -26,8 +26,16 @@ def record_transcribe(model):
     return result["text"]
 
 def compSpeak(engine,text):
-    time.sleep(0.3)
+    start = time.time()
+
+    words = len(text.split())
+    rate = engine.getProperty('rate')  # words per minute
+    duration = (words / rate) * 60  # convert to seconds
     print(f"Speaking: {text}")
     engine.say(text)
     engine.runAndWait()
+    elapsed = time.time() - start
+    print(f"runAndWait took {elapsed:.2f} seconds")
+    time.sleep(duration + 0.5)
+
     print("Finished speaking")
