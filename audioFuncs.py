@@ -36,6 +36,5 @@ def compSpeak(engine,text):
     engine.runAndWait()
     elapsed = time.time() - start
     print(f"runAndWait took {elapsed:.2f} seconds")
-    time.sleep(duration + 0.5)
 
     print("Finished speaking")
