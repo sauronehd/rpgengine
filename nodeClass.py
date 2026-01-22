@@ -1,5 +1,4 @@
-import detectiontools
-
+from pinCalls import *
 class outputNode:
     #the game is designed so the player may either go left or right.
     #Put keywords you think would signify the path the user chose.
@@ -12,8 +11,7 @@ class outputNode:
 
     #outputs will be an array of tuples. The output should be a pin, and its output.
     #can have multiple outputs if you want
-    outputs = []
-
+    outputs: list[tuple[pins, bool]] = []
 
 
 
