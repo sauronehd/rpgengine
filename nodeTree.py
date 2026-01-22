@@ -17,7 +17,7 @@
 #ALWAYS MAKE SURE THE ROOT NODE IS CALLED BEGINNING! THE ENGINE WILL NOT WORK WITHOUT THIS
 
 from nodeClass import *
-import detectiontools
+from pinCalls import *
 
 class nodeTree:
     def __init__(self):
@@ -30,25 +30,25 @@ class nodeTree:
                         "right to the telephone?")
     beginning.leftKey = ["candy", "left"]
     beginning.rightKey = ["telephone", "right"]
-    beginning.outputs = [("fan",2)]
+    beginning.outputs = [(pins.fan,1)]
     candy = outputNode()
     beginning.left = candy
     candy.prompt =("CANDY!!!!!!")
-    candy.outputs = [("heat",1)]
+    candy.outputs = [(pins.heat,1)]
     telephone = outputNode()
     beginning.right = telephone
     telephone.prompt = ("Would you like to turn the dial left or right?")
-    telephone.outputs = [("audio", 2)]
+    telephone.outputs = [(pins.heat, 1)]
     telephone.rightKey = ["right"]
     telephone.leftKey = ["left"]
     rightDial = outputNode()
     telephone.right = rightDial
     rightDial.prompt = ("You have called Mico. Sorry about that")
-    rightDial.outputs = [("audio", 8)]
+    rightDial.outputs = [(pins, 1)]
     leftDial = outputNode()
     telephone.left = leftDial
     leftDial.prompt = ("YOu have called barbara. Yay!")
-    leftDial.outputs = [("Audio", 1)]
+    leftDial.outputs = [(pins.fan, 1)]
 
 
 def printNode(node:outputNode):

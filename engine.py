@@ -5,6 +5,8 @@ from audioFuncs import *
 import whisper
 import pyttsx3
 
+from pinCalls import outputCall
+
 # Read the current node's output array.
 # Perform the outputs needed.
 # Take the prompt and convert to sound, then play
@@ -23,8 +25,7 @@ compSpeak(engine,"") # this clear some lag
 
 while True:
     #replac with pinCalls functions
-    print(currentNode.outputs)
-
+    outputCall(currentNode.outputs)
     compSpeak(engine,currentNode.prompt)
 
     #This is placed so that you will hear and experience the final outputs before the game ends
