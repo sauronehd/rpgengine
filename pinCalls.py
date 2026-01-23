@@ -29,6 +29,14 @@ def outputCall(outs):
 
 
 
+def pinOutSet():
+    try:
+        for pin in pins:
+            GPIO.setup(pin, GPIO.OUT)
+    except error:
+        print(error)
+
+
 def pinReset():
     for pin in pins:
         GPIO.output(pin, pinState.off)
