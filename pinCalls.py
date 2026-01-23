@@ -30,7 +30,7 @@ def outputCall(outs):
 def pinOutSet():
     try:
         for pin in pins:
-            GPIO.setup(pin, GPIO.OUT)
+            GPIO.setup(pin.value, GPIO.OUT)
     finally:
         pass
 
