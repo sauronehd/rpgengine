@@ -17,7 +17,7 @@ def outputCall(outs):
     #print(outs)
     for out in outs:
         if out[0] == pins.fan:
-            GPIO.output(pins.fan.value, out[1])
+            GPIO.output(pins.fan.value, out[1].value)
         else:
             print("Error:Unknown Pin reference")
 
