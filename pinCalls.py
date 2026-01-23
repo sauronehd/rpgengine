@@ -16,12 +16,8 @@ class pinState(Enum):
 def outputCall(outs):
     #print(outs)
     for out in outs:
-        if out[0] == pins.heat:
-            GPIO.output(pins.heat.value, out[1])
-        elif out[0] == pins.fan:
+        if out[0] == pins.fan:
             GPIO.output(pins.fan.value, out[1])
-        elif out[0] == pins.cold:
-            GPIO.output(pins.cold.value, out[1])
         else:
             print("Error:Unknown Pin reference")
 
