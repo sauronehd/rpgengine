@@ -8,6 +8,9 @@ class pins(Enum):
     heat = 1
     fan = 2
     cold = 3
+
+#May have to backtrack later and use pinState.on.value for things because of how enums work
+#Im unsure.
 class pinState(Enum):
     on = GPIO.HIGH
     off = GPIO.LOW
