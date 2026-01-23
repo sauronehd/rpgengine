@@ -1,8 +1,12 @@
-from audioFuncs import *
-import pyttsx3
-print("Testing Commencing")
-engine = pyttsx3.init()
-compSpeak(engine, "This is my first time speaking")
-compSpeak(engine, "This is my second time speaking")
-compSpeak(engine, "This is my third time speaking")
-compSpeak(engine, "This is my forth time speaking")
+from pinCalls import *
+import Jetson.GPIO as GPIO
+import time
+print("commencing test")
+GPIO.setmode(GPIO.BOARD)
+
+outputCall([pins.fan,pinState.on])
+time.sleep(2)
+outputCall([pins.fan,pinState.off])
+
+GPIO.cleanup()
+print("testing complete")

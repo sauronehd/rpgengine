@@ -6,8 +6,8 @@ import Jetson.GPIO as GPIO
 class pins(Enum):
     #these ae placeholder values
     heat = 1
-    fan = 2
-    cold = 3
+    fan = 3
+    cold = 4
 
 #May have to backtrack later and use pinState.on.value for things because of how enums work
 #Im unsure.
