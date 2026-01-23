@@ -33,8 +33,8 @@ def pinOutSet():
     try:
         for pin in pins:
             GPIO.setup(pin, GPIO.OUT)
-    except error:
-        print(error)
+    finally:
+        pass
 
 
 def pinReset():
