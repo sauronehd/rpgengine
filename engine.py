@@ -4,7 +4,7 @@ from audioFuncs import *
 import whisper
 import pyttsx3
 from pinCalls import *
-
+import Jetson.GPIO as GPIO
 # Read the current node's output array.
 # Perform the outputs needed.
 # Take the prompt and convert to sound, then play
@@ -14,7 +14,7 @@ from pinCalls import *
 # move to the currentnode.left or .right depending
 # Restate the prompt if needed
 # Move to appropriate node and return to beginnning of loop.
-
+GPIO.setmode(GPIO.BOARD)
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
 engine = pyttsx3.init()
