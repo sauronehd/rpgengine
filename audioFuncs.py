@@ -1,6 +1,4 @@
 import sounddevice as sd
-import whisper
-import pyttsx3
 import time
 
 def record_transcribe(model):

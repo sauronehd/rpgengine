@@ -30,25 +30,25 @@ class nodeTree:
                         "right to the telephone?")
     beginning.leftKey = ["candy", "left"]
     beginning.rightKey = ["telephone", "right"]
-    beginning.outputs = [(pins.fan,1)]
+    beginning.outputs = [[pins.fan,pinState.on]]
     candy = outputNode()
     beginning.left = candy
     candy.prompt =("CANDY!!!!!!")
-    candy.outputs = [(pins.heat,1)]
+    candy.outputs = [[pins.heat,pinState.on]]
     telephone = outputNode()
     beginning.right = telephone
     telephone.prompt = ("Would you like to turn the dial left or right?")
-    telephone.outputs = [(pins.heat, 1)]
+    telephone.outputs = [[pins.heat, pinState.on]]
     telephone.rightKey = ["right"]
     telephone.leftKey = ["left"]
     rightDial = outputNode()
     telephone.right = rightDial
     rightDial.prompt = ("You have called Mico. Sorry about that")
-    rightDial.outputs = [(pins, 1)]
+    rightDial.outputs = [[pins, pinState.on]]
     leftDial = outputNode()
     telephone.left = leftDial
     leftDial.prompt = ("YOu have called barbara. Yay!")
-    leftDial.outputs = [(pins.fan, 1)]
+    leftDial.outputs = [[pins.fan, pinState.on]]
 
 
 def printNode(node:outputNode):

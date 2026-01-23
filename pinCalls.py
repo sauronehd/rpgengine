@@ -4,32 +4,28 @@ import Jetson.GPIO as GPIO
 
 
 class pins(Enum):
-    #these ae place holder values
+    #these ae placeholder values
     heat = 1
     fan = 2
     cold = 3
-
+class pinState(Enum):
+    on = GPIO.HIGH
+    off = GPIO.LOW
 
 def outputCall(outs):
-    print(outs)
-    for pin in outs:
-        if pin(0) == pins.heat:
-            GPIO.output(pins.heat.value, readOut(pin))
-        elif pin(0) ==pin.fan:
-            GPIO.output(pin.fan.value, readOut(pin))
-        elif pin(0) ==pin.cold:
-            GPIO.output(pin.cold.value, readOut(pin))
+    #print(outs)
+    for out in outs:
+        if out[0] == pins.heat:
+            GPIO.output(pins.heat.value, out[1])
+        elif out[0] == pins.fan:
+            GPIO.output(pins.fan.value, out[1])
+        elif out[0] == pins.cold:
+            GPIO.output(pins.cold.value, out[1])
         else:
             print("Error:Unknown Pin reference")
 
-def readOut(pin):
-    if pin(1) == 0:
-        return GPIO.LOW
-    elif pin(1) == 1:
-        return GPIO.HIGH
-    print("Failure, turning off.")
-    return GPIO.LOW
+
 
 def pinReset():
     for pin in pins:
-        GPIO.output(pin, GPIO.LOW)
+        GPIO.output(pin, pinState.off)
