@@ -24,11 +24,12 @@ def outputCall(outs):
 
 
 def pinOutSet():
-    try:
-        for pin in pins:
+
+    for pin in pins:
+        try:
             GPIO.setup(pin.value, GPIO.OUT)
-    finally:
-        pass
+        except:
+            print("Error:Failed to setup GPIO pin:"+str(pin.value))
 
 
 def pinReset():
