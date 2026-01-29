@@ -4,7 +4,7 @@ import time
 print("commencing test")
 GPIO.setmode(GPIO.BOARD)
 pinOutSet()
-outputCall([[pins.fan,pinState.on]])
+outputCall([[pins.fan,pinState.on],[pins.heat,pinState.on],[pins.cold,pinState.on]])
 time.sleep(2)
 outputCall([[pins.fan,pinState.off]])
 

@@ -6,6 +6,8 @@ import Jetson.GPIO as GPIO
 class pins(Enum):
     #these ae placeholder values
     fan = 15
+    cold = 32
+    heat =33
 
 #May have to backtrack later and use pinState.on.value for things because of how enums work
 #Im unsure.
@@ -16,10 +18,9 @@ class pinState(Enum):
 def outputCall(outs):
     #print(outs)
     for out in outs:
-        if out[0] == pins.fan:
-            GPIO.output(pins.fan.value, out[1].value)
-        else:
-            print("Error:Unknown Pin reference")
+            GPIO.output(out[0].value, out[1].value)
+
+
 
 
 
