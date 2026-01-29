@@ -34,4 +34,4 @@ def pinOutSet():
 
 def pinReset():
     for pin in pins:
-        GPIO.output(pin, pinState.off)
+        GPIO.output(pin, pinState.off.value)
