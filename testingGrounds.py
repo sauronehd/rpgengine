@@ -1,4 +1,6 @@
+import pyttsx3
 from audioFuncs import *
-import whisper
-model = whisper.load_model("base")
-print(record_transcribe(model))
+engine = pyttsx3.init()
+engine.setProperty('rate', 125)
+compSpeak(engine,"") # this clear some lag
+compSpeak(engine,"Hello, testing, testing")
