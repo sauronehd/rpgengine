@@ -1,6 +1,12 @@
 import pyttsx3
 from audioFuncs import *
-engine = pyttsx3.init()
-engine.setProperty('rate', 125)
-compSpeak(engine,"") # this clear some lag
-compSpeak(engine,"Hello, testing, testing")
+from pinCalls import *
+GPIO.setmode(GPIO.BOARD)
+pinOutSet()
+outputCall([[pins.cold,pinState.on],[pins.heat,pinState.on],[pins.fan,pinState.on]])
+wait = input("Press enter to continue")
+pinReset()
+GPIO.cleanup()
+
+
+
