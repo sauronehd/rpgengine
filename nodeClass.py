@@ -12,6 +12,7 @@ class outputNode:
     #outputs will be an array of tuples. The output should be a pin, and its output.
     #can have multiple outputs if you want
     outputs: list[tuple[pins, pinState]] = []
+    modulatingout: list[tuple[modpins, modState]] = []
 
 
 

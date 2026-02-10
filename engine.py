@@ -35,7 +35,7 @@ while pinSet == "u":
 while True:
     #replac with pinCalls functions
     if pinSet == "y":
-        outputCall(currentNode.outputs)
+        outputCall(currentNode.outputs,currentNode.modulatingout)
     elif pinSet == "n":
         print(currentNode.outputs)
     else:
