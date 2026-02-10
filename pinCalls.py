@@ -3,12 +3,12 @@ from enum import Enum
 import Jetson.GPIO as GPIO
 
 class pins(Enum):
-    fan = 15
+    fan = 60
     cold = 32
     heat =33
 
 class modpins(Enum):
-    mister = GPIO.PWM(40, 1000000)
+    mister = GPIO.PWM(15, 1000000)
 
 
 #May have to backtrack later and use pinState.on.value for things because of how enums work
