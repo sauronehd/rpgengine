@@ -1,7 +1,7 @@
 #use this to make callable functions for outputs(fans, heater, ect)
 from enum import Enum
 import Jetson.GPIO as GPIO
-
+GPIO.setmode(GPIO.BOARD)
 class pins(Enum):
     fan = 60
     cold = 32
