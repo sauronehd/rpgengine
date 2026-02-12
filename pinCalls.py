@@ -10,6 +10,8 @@ class pins(Enum):
 class modpins(Enum):
     mister = GPIO.PWM(15, 1000000)
 
+class modpinsnumber(Enum):
+    mister = 15
 
 #May have to backtrack later and use pinState.on.value for things because of how enums work
 #Im unsure.
@@ -43,14 +45,14 @@ def pinOutSet():
             GPIO.setup(pin.value, GPIO.OUT)
         except:
             print("Error:Failed to setup GPIO pin:"+str(pin.value))
-
+    i = 0
     for pin in modpins:
         try:
-            GPIO.setup(pin.value.channel, GPIO.OUT)
+            GPIO.setup(modpinsnumber[i], GPIO.OUT)
         except:
             print("Error:Failed to setup GPIO pin:"+str(pin.value))
 
-
+        i=i+1
 
 def pinReset():
     for pin in pins:
