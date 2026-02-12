@@ -3,7 +3,7 @@ from enum import Enum
 import Jetson.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 class pins(Enum):
-    fan = 60
+    fan = 14
     cold = 32
     heat =33
 
@@ -45,15 +45,7 @@ def pinOutSet():
             GPIO.setup(pin.value, GPIO.OUT)
         except:
             print("Error:Failed to setup GPIO pin:"+str(pin.value))
-    i = 0
-    for pin in modpins:
-        print("attempting pin:" + str(modpinsnumber[i]))
-        try:
-            GPIO.setup(modpinsnumber[i], GPIO.OUT)
-        except:
-            print("Error:Failed to setup GPIO pin:"+str(pin.value))
 
-        i=i+1
 
 def pinReset():
     for pin in pins:
