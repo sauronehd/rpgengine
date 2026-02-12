@@ -8,7 +8,7 @@ class pins(Enum):
     heat =33
 
 class modpins(Enum):
-    mister = GPIO.PWM(15, 1000000)
+    mister = GPIO.PWM(15, 100000)
 
 class modpinsnumber(Enum):
     mister = 15
