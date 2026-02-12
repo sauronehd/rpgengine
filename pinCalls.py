@@ -46,7 +46,7 @@ def pinOutSet():
 
     for pin in modpins:
         try:
-            GPIO.setup(pin.value, GPIO.OUT)
+            GPIO.setup(pin.value.channel, GPIO.OUT)
         except:
             print("Error:Failed to setup GPIO pin:"+str(pin.value))
 
