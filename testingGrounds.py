@@ -2,11 +2,11 @@
 from audioFuncs import *
 from pinCalls import *
 print("setting to baord")
-GPIO.setmode(GPIO.BOARD)
+import RPi.GPIO as GPIO
 print("pinoutsetcall")
 pinOutSet()
 print("output call ")
-outputCall([],[[modpins.mister,modState.on]])
+outputCall([])
 wait = input("Press enter to continue")
 pinReset()
 GPIO.cleanup()

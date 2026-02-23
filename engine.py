@@ -4,7 +4,12 @@ from audioFuncs import *
 import whisper
 import pyttsx3
 from pinCalls import *
-import Jetson.GPIO as GPIO
+import sys
+if sys.platform == 'win32':
+    import fake_rpi
+    import fake_rpi.RPi.GPIO as GPIO
+else:
+    import RPi.GPIO as GPIO
 # Read the current node's output array.
 # Perform the outputs needed.
 # Take the prompt and convert to sound, then play
@@ -37,7 +42,7 @@ while pinSet == "u":
 while True:
     #replac with pinCalls functions
     if pinSet == "y":
-        outputCall(currentNode.outputs,currentNode.modulatingout)
+        outputCall(currentNode.outputs)
     elif pinSet == "n":
         print(currentNode.outputs)
     else:
