@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="">
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="testing is a record_transcribe test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testingGrounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingGrounds.py" afterDir="false" />
     </list>
@@ -62,11 +62,24 @@
       <updated>1767804324978</updated>
       <workItem from="1772816798050" duration="1090000" />
       <workItem from="1772831421361" duration="261000" />
-      <workItem from="1773090580769" duration="193000" />
+      <workItem from="1773090580769" duration="932000" />
     </task>
+    <task id="LOCAL-00001" summary="testing is a record_transcribe test">
+      <option name="closed" value="true" />
+      <created>1773090881398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1773090881398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="testing is a record_transcribe test" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing is a record_transcribe test" />
   </component>
 </project>
