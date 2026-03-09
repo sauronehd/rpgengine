@@ -3,7 +3,7 @@ import time
 
 def record_transcribe(model):
     duration = 5
-    sample_rate = 16000
+    sample_rate = 48000
 
     print("Recording...")
     audio = sd.rec(int(duration * sample_rate),

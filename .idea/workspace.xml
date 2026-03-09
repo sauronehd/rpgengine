@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="testing is a record_transcribe test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingGrounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingGrounds.py" afterDir="false" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="bug fix">
+      <change beforePath="$PROJECT_DIR$/audioFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioFuncs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
       <updated>1767804324978</updated>
       <workItem from="1772816798050" duration="1090000" />
       <workItem from="1772831421361" duration="261000" />
-      <workItem from="1773090580769" duration="932000" />
+      <workItem from="1773090580769" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -72,7 +71,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773090881398</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1773091536139</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773091536139</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +87,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing is a record_transcribe test" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing is a record_transcribe test" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
 </project>
