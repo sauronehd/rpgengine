@@ -4,7 +4,7 @@ import whisper
 
 model = whisper.load_model("base")
 
-print(record_transcribe(model))
+print("Text is:"+record_transcribe(model))
 
 
 

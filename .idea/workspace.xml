@@ -61,7 +61,7 @@
       <updated>1767804324978</updated>
       <workItem from="1772816798050" duration="1090000" />
       <workItem from="1772831421361" duration="261000" />
-      <workItem from="1773090580769" duration="1442000" />
+      <workItem from="1773090580769" duration="1502000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -87,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773091882126</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1773092045393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773092045393</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
