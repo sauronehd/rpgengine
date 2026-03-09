@@ -23,6 +23,10 @@ GPIO.setmode(GPIO.BOARD)
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
 engine = pyttsx3.init()
+voices = engine.getProperty('voices')
+print(voices)  # See what's available
+engine.setProperty('voice', voices[0].id)
+engine.setProperty('rate', 125)
 engine.setProperty('rate', 125)
 compSpeak(engine,"") # this clear some lag
 pinSet = "u"
