@@ -4,19 +4,20 @@ import time
 def record_transcribe(model):
     duration = 5
     sample_rate = 48000
-
+    target_rate =16000
     print("Recording...")
     audio = sd.rec(int(duration * sample_rate),
                    samplerate=sample_rate,
                    channels=2,
                    dtype='float32',
-                   device = 2)
+                   device = 1)
     sd.wait()
     print("Recording finished")
 
     # Flatten the audio array and normalize
     audio = audio.flatten()
-
+    resample_factor = sample_rate // target_rate  # = 3
+    audio = audio[::resample_factor]
     print("audio is:")
     print(audio)
 
