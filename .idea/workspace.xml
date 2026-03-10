@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="sample change">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="device 2">
       <change beforePath="$PROJECT_DIR$/audioFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioFuncs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingGrounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingGrounds.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <workItem from="1772831421361" duration="261000" />
       <workItem from="1773090580769" duration="1675000" />
       <workItem from="1773092281918" duration="4081000" />
-      <workItem from="1773171233616" duration="625000" />
+      <workItem from="1773171233616" duration="666000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -235,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773171794624</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="device 2">
+      <option name="closed" value="true" />
+      <created>1773171874103</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1773171874103</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +276,7 @@
     <MESSAGE value="print normal" />
     <MESSAGE value="couple of things" />
     <MESSAGE value="sample change" />
-    <option name="LAST_COMMIT_MESSAGE" value="sample change" />
+    <MESSAGE value="device 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="device 2" />
   </component>
 </project>
