@@ -8,7 +8,7 @@ def record_transcribe(model):
     print("Recording...")
     audio = sd.rec(int(duration * sample_rate),
                    samplerate=sample_rate,
-                   channels=2,
+                   channels=1,
                    dtype='float32')
     sd.wait()
     print("Recording finished")
@@ -19,6 +19,7 @@ def record_transcribe(model):
 
     # Transcribe directly from numpy array
     result = model.transcribe(audio, fp16=False)
+
     sd.stop()
     time.sleep(0.5)  # Give audio device time to release
     return result["text"]
