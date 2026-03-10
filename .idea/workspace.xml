@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="to string">
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="print normal">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/audioFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioFuncs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,7 @@
       <workItem from="1772831421361" duration="261000" />
       <workItem from="1773090580769" duration="1675000" />
       <workItem from="1773092281918" duration="4081000" />
-      <workItem from="1773171233616" duration="214000" />
+      <workItem from="1773171233616" duration="498000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -209,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773171400541</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="print normal">
+      <option name="closed" value="true" />
+      <created>1773171585371</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1773171585371</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +250,7 @@
     <MESSAGE value="1 channel" />
     <MESSAGE value="audio print" />
     <MESSAGE value="to string" />
-    <option name="LAST_COMMIT_MESSAGE" value="to string" />
+    <MESSAGE value="print normal" />
+    <option name="LAST_COMMIT_MESSAGE" value="print normal" />
   </component>
 </project>

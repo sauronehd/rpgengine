@@ -3,13 +3,14 @@ import time
 #force push
 def record_transcribe(model):
     duration = 5
-    sample_rate = 48000
+    sample_rate = 16000
 
     print("Recording...")
     audio = sd.rec(int(duration * sample_rate),
                    samplerate=sample_rate,
                    channels=1,
-                   dtype='float32')
+                   dtype='float32',
+                   device = 1)
     sd.wait()
     print("Recording finished")
 
