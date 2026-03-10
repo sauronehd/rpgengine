@@ -9,7 +9,8 @@ def record_transcribe(model):
     audio = sd.rec(int(duration * sample_rate),
                    samplerate=sample_rate,
                    channels=1,
-                   dtype='float32')
+                   dtype='float32',
+                   device='hw:2,0')
     sd.wait()
     print("Recording finished")
 

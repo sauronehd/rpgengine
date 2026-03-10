@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="force [ush">
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="why">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingGrounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingGrounds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audioFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioFuncs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
       <workItem from="1772816798050" duration="1090000" />
       <workItem from="1772831421361" duration="261000" />
       <workItem from="1773090580769" duration="1675000" />
-      <workItem from="1773092281918" duration="1296000" />
+      <workItem from="1773092281918" duration="2222000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -145,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773093262889</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="why">
+      <option name="closed" value="true" />
+      <created>1773093616379</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1773093616379</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +177,7 @@
     <MESSAGE value="debugging and more testing" />
     <MESSAGE value="more debuggin" />
     <MESSAGE value="force [ush" />
-    <option name="LAST_COMMIT_MESSAGE" value="force [ush" />
+    <MESSAGE value="why" />
+    <option name="LAST_COMMIT_MESSAGE" value="why" />
   </component>
 </project>
