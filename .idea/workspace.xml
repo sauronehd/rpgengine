@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="change rate, some debugging">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="2 channel test">
+      <change beforePath="$PROJECT_DIR$/audioFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioFuncs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
       <workItem from="1772831421361" duration="261000" />
       <workItem from="1773090580769" duration="1675000" />
       <workItem from="1773092281918" duration="4081000" />
-      <workItem from="1773171233616" duration="1612000" />
+      <workItem from="1773171233616" duration="1750000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -265,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773172101450</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="2 channel test">
+      <option name="closed" value="true" />
+      <created>1773173058161</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1773173058161</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +311,7 @@
     <MESSAGE value="device 2" />
     <MESSAGE value="device 2, 2 channels" />
     <MESSAGE value="change rate, some debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="change rate, some debugging" />
+    <MESSAGE value="2 channel test" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 channel test" />
   </component>
 </project>
