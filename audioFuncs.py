@@ -16,6 +16,8 @@ def record_transcribe(model):
     # Flatten the audio array and normalize
     audio = audio.flatten()
 
+    print("audio is:"+audio)
+
 
     # Transcribe directly from numpy array
     result = model.transcribe(audio, fp16=False)
