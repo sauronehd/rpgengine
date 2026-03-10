@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="device fetch">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="device fetch patch">
       <change beforePath="$PROJECT_DIR$/audioFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioFuncs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
       <workItem from="1772816798050" duration="1090000" />
       <workItem from="1772831421361" duration="261000" />
       <workItem from="1773090580769" duration="1675000" />
-      <workItem from="1773092281918" duration="2487000" />
+      <workItem from="1773092281918" duration="2532000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -161,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773157756898</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="device fetch patch">
+      <option name="closed" value="true" />
+      <created>1773157985192</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1773157985192</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +194,7 @@
     <MESSAGE value="force [ush" />
     <MESSAGE value="why" />
     <MESSAGE value="device fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="device fetch" />
+    <MESSAGE value="device fetch patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="device fetch patch" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 import sounddevice as sd
 import time
-
+#force push
 def record_transcribe(model):
     duration = 5
     sample_rate = 48000
