@@ -10,7 +10,7 @@ def record_transcribe(model):
                    samplerate=sample_rate,
                    channels=1,
                    dtype='float32',
-                   device = 'hw:2,0')
+                   device = 'default')
     sd.wait()
     print("Recording finished")
 
