@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="hw:2,0 test">
-      <change beforePath="$PROJECT_DIR$/audioFuncs.py" beforeDir="false" afterPath="$PROJECT_DIR$/audioFuncs.py" afterDir="false" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="default device">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testingGrounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingGrounds.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,10 @@
       <workItem from="1772831421361" duration="261000" />
       <workItem from="1773090580769" duration="1675000" />
       <workItem from="1773092281918" duration="4081000" />
-      <workItem from="1773171233616" duration="2166000" />
+      <workItem from="1773171233616" duration="2455000" />
+      <workItem from="1773254896705" duration="49000" />
+      <workItem from="1773255103883" duration="1444000" />
+      <workItem from="1773689128479" duration="180000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -281,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773173192131</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="default device">
+      <option name="closed" value="true" />
+      <created>1773173618341</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1773173618341</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +333,7 @@
     <MESSAGE value="change rate, some debugging" />
     <MESSAGE value="2 channel test" />
     <MESSAGE value="hw:2,0 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw:2,0 test" />
+    <MESSAGE value="default device" />
+    <option name="LAST_COMMIT_MESSAGE" value="default device" />
   </component>
 </project>

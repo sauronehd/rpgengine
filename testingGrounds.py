@@ -1,9 +1,8 @@
-from audioFuncs import *
-import pyttsx3
-#foce push
-import whisper
-
-model = whisper.load_model("base")
-print(sd.query_devices())
-print(sd.query_devices(kind='input'))
-print("Text is:"+record_transcribe(model))
+from RPi import GPIO
+GPIO.setmode(GPIO.BOARD)
+for i in range(1,40):
+    try:
+        GPIO.setup(i,GPIO.OUT)
+        GPIO.output(i,GPIO.HIGH)
+    except:
+        print(f"Error on pin: {i}")
