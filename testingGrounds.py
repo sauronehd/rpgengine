@@ -1,5 +1,6 @@
 from RPi import GPIO
 GPIO.setmode(GPIO.BOARD)
+#force push
 for i in range(1,40):
     try:
         GPIO.setup(i,GPIO.OUT)
