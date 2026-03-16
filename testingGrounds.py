@@ -7,3 +7,8 @@ for i in range(1,40):
         GPIO.output(i,GPIO.HIGH)
     except:
         print(f"Error on pin: {i}")
+
+
+wait = input("Press Enter to continue...")
+
+GPIO.cleanup()

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="default device">
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="force push">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testingGrounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingGrounds.py" afterDir="false" />
     </list>
@@ -67,7 +67,7 @@
       <workItem from="1773171233616" duration="2455000" />
       <workItem from="1773254896705" duration="49000" />
       <workItem from="1773255103883" duration="1444000" />
-      <workItem from="1773689128479" duration="180000" />
+      <workItem from="1773689128479" duration="611000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -293,7 +293,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773173618341</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="pin test">
+      <option name="closed" value="true" />
+      <created>1773689314091</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1773689314091</updated>
+    </task>
+    <task id="LOCAL-00030" summary="force push">
+      <option name="closed" value="true" />
+      <created>1773689334276</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1773689334276</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +336,6 @@
     <MESSAGE value="why" />
     <MESSAGE value="device fetch" />
     <MESSAGE value="device fetch patch" />
-    <MESSAGE value="force push" />
     <MESSAGE value="attempt" />
     <MESSAGE value="1 channel" />
     <MESSAGE value="audio print" />
@@ -334,6 +349,8 @@
     <MESSAGE value="2 channel test" />
     <MESSAGE value="hw:2,0 test" />
     <MESSAGE value="default device" />
-    <option name="LAST_COMMIT_MESSAGE" value="default device" />
+    <MESSAGE value="pin test" />
+    <MESSAGE value="force push" />
+    <option name="LAST_COMMIT_MESSAGE" value="force push" />
   </component>
 </project>
