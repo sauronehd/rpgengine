@@ -3,7 +3,7 @@ from enum import Enum
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 class pins(Enum):
-    fan = 14
+    fan = 11
     cold = 32
     heat =33
 
@@ -19,14 +19,6 @@ def outputCall(gpioouts):
     #print(outs)
     for out in gpioouts:
             GPIO.output(out[0].value, out[1].value)
-
-
-
-
-
-
-
-
 
 
 def pinOutSet():

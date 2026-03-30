@@ -85,5 +85,6 @@ while True:
         print(path)
 
 engine.stop()
+GPIO.cleanup()
 print("Goodbye")
 
