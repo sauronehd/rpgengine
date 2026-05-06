@@ -5,84 +5,50 @@ import whisper
 import pyttsx3
 from pinCalls import *
 import sys
-if sys.platform == 'win32':
-    import fake_rpi
-    import fake_rpi.RPi.GPIO as GPIO
-else:
-    import RPi.GPIO as GPIO
-# Read the current node's output array.
-# Perform the outputs needed.
-# Take the prompt and convert to sound, then play
-# If the node is a leaf, exit and end
-# Else, Await response
-# use detection tools to identify the path
-# move to the currentnode.left or .right depending
-# Restate the prompt if needed
-# Move to appropriate node and return to beginnning of loop.
+import RPi.GPIO as GPIO
+
 GPIO.setmode(GPIO.BOARD)
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-print(voices)  # See what's available
+print(voices)
 engine.setProperty('voice', voices[0].id)
 engine.setProperty('rate', 125)
-engine.setProperty('rate', 125)
-compSpeak(engine,"") # this clear some lag
-pinSet = "u"
-while pinSet == "u":
-    _input = input("Are pins set up? Enter y or n.")
-    if _input == "y":
-        pinSet = "y"
-    elif _input == "n":
-        pinSet = "n"
-    else:
-        pinSet = "u"
-        print("Invalid input. Please enter y or n.")
-
-
+compSpeak(engine,"")
 
 
 while True:
-    #replac with pinCalls functions
-    if pinSet == "y":
-        outputCall(currentNode.outputs)
-    elif pinSet == "n":
-        print(currentNode.outputs)
-    else:
-        print("Error: Pinset unknown")
+    outputCall(currentNode.outputs)
 
     compSpeak(engine,currentNode.prompt)
 
     #This is placed so that you will hear and experience the final outputs before the game ends
-    if getattr(currentNode, 'left', None) is None and getattr(currentNode, 'right', None) is None:
+    if currentNode.children == {}:
         break
 
     response = record_transcribe(model)
     response = response.lower()
     print("The repsonse is: ")
     print(response)
-
-    path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
-    while path == choice.unknown:
-        #replace with tts output
-        compSpeak(engine,"Sorry, I didnt understand that")
-        compSpeak(engine,"What would you like to do?")
-
-        #replace with stt input mike
-        response = record_transcribe(model)
-        print("The repsonse is: ")
-        print(response)
-
-        path = evaluateChoice(currentNode.leftKey,currentNode.rightKey,response)
-
-    if path == choice.left:
-        currentNode = currentNode.left
-    elif path == choice.right:
-        currentNode = currentNode.right
+    #change evaluate choice
+    if currentNode.children.keys().__len__() == 0:
+        newnode = currentnode.children.get(currentNode.children.keys()[0])
     else:
-        print("Error: Choice is extraneous value:")
-        print(path)
+        newnode = returnnode(currentNode.children,response)
+        while newnode == False:
+            #replace with tts output
+            compSpeak(engine,"Sorry, I didnt understand that")
+            compSpeak(engine,"What would you like to do?")
+
+            #replace with stt input mike
+            response = record_transcribe(model)
+            print("The repsonse is: ")
+            print(response)
+
+            newnode = returnnode(currentNode.children,response)
+
+    currentNode = newnode
 
 engine.stop()
 GPIO.cleanup()

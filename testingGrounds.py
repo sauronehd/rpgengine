@@ -1,14 +1,25 @@
-from RPi import GPIO
-GPIO.setmode(GPIO.BOARD)
-#force push
-for i in range(1,40):
-    try:
-        GPIO.setup(i,GPIO.OUT)
-        GPIO.output(i,GPIO.HIGH)
-    except:
-        print(f"Error on pin: {i}")
+class outputNodeTest:
+    prompt = ""
+    outputs = []
+    children = {}
 
 
-wait = input("Press Enter to continue...")
 
-GPIO.cleanup()
+    def add_child(self, keys: [list[str],'outputNode']):
+        for key in keys[0]:
+            print(f"key is: {key}")
+            self.children[key] = keys[1]
+
+    def add_prompt(self, newprompt: str):
+        prompt = newprompt
+
+
+
+start = outputNodeTest()
+start.add_prompt("Hello")
+fire = outputNodeTest()
+water = outputNodeTest()
+try:
+    start.add_child([["Fire","Left","Heat"],fire])
+finally:
+    print(start.children)
