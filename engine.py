@@ -1,5 +1,5 @@
 from detectiontools import *
-from nodeTree import *
+from nodetree import *
 from audioFuncs import *
 import whisper
 import pyttsx3

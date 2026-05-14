@@ -4,8 +4,10 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 class pins(Enum):
     fan = 13
-    cold = 32
-    heat =33
+    cold = 20
+    heat = 21
+    speaker = 34
+    subwoofer = 35
 
 #May have to backtrack later and use pinState.on.value for things because of how enums work
 #Im unsure.
