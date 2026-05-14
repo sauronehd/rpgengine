@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 class pins(Enum):
     fan = 13
-    cold = 20
+    cold = 15
     heat = 21
     speaker = 34
     subwoofer = 35
