@@ -6,8 +6,8 @@ class pins(Enum):
     fan = 19
     cold = 15
     heat = 13
-    speaker = 34
-    subwoofer = 35
+    speaker = "speaker"
+    subwoofer = "subwoofer"
 
 #May have to backtrack later and use pinState.on.value for things because of how enums work
 #Im unsure.
@@ -20,8 +20,13 @@ class pinState(Enum):
 def outputCall(gpioouts):
     #print(outs)
     for out in gpioouts:
+        try:
             GPIO.output(out[0].value, out[1].value)
-
+        except:
+            if out[0].value == "speaker":
+                print("Speaker")
+            elif out[0].value == "subwoofer":
+                print("Subwoofer")
 
 def pinOutSet():
 

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="cooler is pin 15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -27,22 +30,22 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0001823460993968" />
-      <entry key="S2" value="1.2809516844349311" />
-      <entry key="S5" value="2.762680252035313" />
-      <entry key="S10" value="4.954197622573272" />
-      <entry key="S30" value="8.604760235473755" />
-      <entry key="S60" value="10.112899777738722" />
-      <entry key="M2" value="11.00294008871084" />
-      <entry key="M5" value="11.587449925592452" />
-      <entry key="M10" value="11.791359113605964" />
-      <entry key="M15" value="11.860374371991531" />
-      <entry key="M30" value="11.929919827527613" />
-      <entry key="H1" value="11.964892790076261" />
-      <entry key="H2" value="11.982429578468135" />
-      <entry key="H4" value="11.99121058062682" />
-      <entry key="D1" value="11.998534511862992" />
-      <entry key="W1" value="11.999790630222627" />
+      <entry key="MS500" value="1.0000000051143765" />
+      <entry key="S2" value="1.0120354634442554" />
+      <entry key="S5" value="1.3022138563074654" />
+      <entry key="S10" value="2.3152306644128706" />
+      <entry key="S30" value="6.671389445068442" />
+      <entry key="S60" value="10.189827584815488" />
+      <entry key="M2" value="13.00533229495307" />
+      <entry key="M5" value="15.245998865019006" />
+      <entry key="M10" value="16.55471560766145" />
+      <entry key="M15" value="17.77091278586941" />
+      <entry key="M30" value="20.77170422233421" />
+      <entry key="H1" value="23.844008100295834" />
+      <entry key="H2" value="26.087204416477153" />
+      <entry key="H4" value="27.448276188414823" />
+      <entry key="D1" value="28.72702003779652" />
+      <entry key="W1" value="28.96063561440499" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -64,23 +67,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9460576467255959" />
-      <entry key="MS500" value="0.989150935200531" />
-      <entry key="S2" value="1.2743357352440743" />
-      <entry key="S5" value="2.735587766316635" />
-      <entry key="S10" value="4.911175880668855" />
-      <entry key="S30" value="8.57052175667574" />
-      <entry key="S60" value="10.091373751325246" />
-      <entry key="M2" value="10.990851558421598" />
-      <entry key="M5" value="11.582262935838946" />
-      <entry key="M10" value="11.788704007539293" />
-      <entry key="M15" value="11.858590377953384" />
-      <entry key="M30" value="11.929020810001331" />
-      <entry key="H1" value="11.964441515071886" />
-      <entry key="H2" value="11.982203498009184" />
-      <entry key="H4" value="11.991097429483144" />
-      <entry key="D1" value="11.998515637919423" />
-      <entry key="W1" value="11.999787933567157" />
+      <entry key="MS100" value="0.9138314502294005" />
+      <entry key="MS500" value="0.9821395977729878" />
+      <entry key="S2" value="1.0042729170018676" />
+      <entry key="S5" value="1.2611485062765233" />
+      <entry key="S10" value="2.2460725198786156" />
+      <entry key="S30" value="6.603983611200095" />
+      <entry key="S60" value="10.14148789650921" />
+      <entry key="M2" value="12.975754064693156" />
+      <entry key="M5" value="15.232532760441078" />
+      <entry key="M10" value="16.547575594760954" />
+      <entry key="M15" value="17.765944242562227" />
+      <entry key="M30" value="20.76898077496703" />
+      <entry key="H1" value="23.84252711627032" />
+      <entry key="H2" value="26.08642072465375" />
+      <entry key="H4" value="27.447871274801805" />
+      <entry key="D1" value="28.726950509082656" />
+      <entry key="W1" value="28.960625628447517" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -104,6 +107,10 @@
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "/Users/twang6440/Documents/GitHub/rpgengine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
@@ -134,7 +141,7 @@
       <workItem from="1773783811266" duration="32000" />
       <workItem from="1773847405098" duration="48000" />
       <workItem from="1774904308521" duration="527000" />
-      <workItem from="1779132409238" duration="146000" />
+      <workItem from="1779132409238" duration="954000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
