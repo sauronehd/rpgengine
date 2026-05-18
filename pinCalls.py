@@ -3,9 +3,9 @@ from enum import Enum
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 class pins(Enum):
-    fan = 13
+    fan = 19
     cold = 15
-    heat = 21
+    heat = 13
     speaker = 34
     subwoofer = 35
 

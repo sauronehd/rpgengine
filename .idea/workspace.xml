@@ -24,6 +24,65 @@
     &quot;accountId&quot;: &quot;6beff3e9-fedd-4873-b4c6-bb779734dfd8&quot;
   }
 }</component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0001823460993968" />
+      <entry key="S2" value="1.2809516844349311" />
+      <entry key="S5" value="2.762680252035313" />
+      <entry key="S10" value="4.954197622573272" />
+      <entry key="S30" value="8.604760235473755" />
+      <entry key="S60" value="10.112899777738722" />
+      <entry key="M2" value="11.00294008871084" />
+      <entry key="M5" value="11.587449925592452" />
+      <entry key="M10" value="11.791359113605964" />
+      <entry key="M15" value="11.860374371991531" />
+      <entry key="M30" value="11.929919827527613" />
+      <entry key="H1" value="11.964892790076261" />
+      <entry key="H2" value="11.982429578468135" />
+      <entry key="H4" value="11.99121058062682" />
+      <entry key="D1" value="11.998534511862992" />
+      <entry key="W1" value="11.999790630222627" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9460576467255959" />
+      <entry key="MS500" value="0.989150935200531" />
+      <entry key="S2" value="1.2743357352440743" />
+      <entry key="S5" value="2.735587766316635" />
+      <entry key="S10" value="4.911175880668855" />
+      <entry key="S30" value="8.57052175667574" />
+      <entry key="S60" value="10.091373751325246" />
+      <entry key="M2" value="10.990851558421598" />
+      <entry key="M5" value="11.582262935838946" />
+      <entry key="M10" value="11.788704007539293" />
+      <entry key="M15" value="11.858590377953384" />
+      <entry key="M30" value="11.929020810001331" />
+      <entry key="H1" value="11.964441515071886" />
+      <entry key="H2" value="11.982203498009184" />
+      <entry key="H4" value="11.991097429483144" />
+      <entry key="D1" value="11.998515637919423" />
+      <entry key="W1" value="11.999787933567157" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -32,23 +91,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/twang6440/Documents/GitHub/rpgengine",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
       </set>
     </attachedChunks>
   </component>
@@ -70,6 +134,7 @@
       <workItem from="1773783811266" duration="32000" />
       <workItem from="1773847405098" duration="48000" />
       <workItem from="1774904308521" duration="527000" />
+      <workItem from="1779132409238" duration="146000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
