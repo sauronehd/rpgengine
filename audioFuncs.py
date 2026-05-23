@@ -26,7 +26,8 @@ def record_transcribe(model):
     result = model.transcribe(audio, fp16=False)
 
     sd.stop()
-    time.sleep(0.5)  # Give audio device time to release
+    time.sleep(0.5)# Give audio device time to release
+    print(result["text"])
     return result["text"]
 
 def compSpeak(engine,text):
