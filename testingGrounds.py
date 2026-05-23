@@ -1,5 +1,15 @@
 from audioFuncs import *
 import pyttsx3
+import sounddevice as sd
+
+# List all devices
+print(sd.query_devices())
+
+# Show just the current default input/output
+print(sd.query_devices(kind='output'))
+print(sd.query_devices(kind='input'))
+
+
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 print(voices)
