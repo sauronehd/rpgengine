@@ -20,7 +20,7 @@ compSpeak(engine,"")
 
 while True:
     outputCall(currentNode.outputs)
-
+    print(currentNode.outputs)
     compSpeak(engine,currentNode.prompt)
 
     #This is placed so that you will hear and experience the final outputs before the game ends

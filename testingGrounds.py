@@ -1,11 +1,9 @@
-from pinCalls import *
-
-pinOutSet()
-GPIO.setmode(GPIO.BOARD)
-
-GPIO.output(pins.fan.value, GPIO.HIGH)
-GPIO.output(pins.heat.value, GPIO.HIGH)
-GPIO.output(pins.cold.value, GPIO.HIGH)
-print("Writing to 19, 13, 15")
-wait = input("Press Enter to continue...")
-GPIO.cleanup()
+from audioFuncs import *
+import pyttsx3
+compSpeak(engine,"")
+engine = pyttsx3.init()
+voices = engine.getProperty('voices')
+print(voices)
+engine.setProperty('voice', voices[69].id)
+engine.setProperty('rate', 125)
+compSpeak(engine,"Hello it's me")
