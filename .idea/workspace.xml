@@ -106,7 +106,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/twang6440/Documents/GitHub/rpgengine",
+    "last_opened_file_path": "C:/Users/timot/OneDrive/Documents/GitHub/rpgengine",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -142,6 +142,7 @@
       <workItem from="1773847405098" duration="48000" />
       <workItem from="1774904308521" duration="527000" />
       <workItem from="1779132409238" duration="1460000" />
+      <workItem from="1779539015001" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />

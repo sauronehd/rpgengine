@@ -13,7 +13,7 @@ model = whisper.load_model("tiny")
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 print(voices)
-engine.setProperty('voice', voices[0].id)
+engine.setProperty('voice', voices[69].id)
 engine.setProperty('rate', 125)
 compSpeak(engine,"")
 
