@@ -6,13 +6,15 @@ import sounddevice as sd
 print(sd.query_devices())
 
 # Show just the current default input/output
+Print("Outputs are:")
 print(sd.query_devices(kind='output'))
-print("Those were output")
+Print("Inputs are:")
 print(sd.query_devices(kind='input'))
-print("Those were input")
-sd.default.device.output = 4
+device = input("Choose a Device:")
+sd.default.device.output = device
 
 engine = pyttsx3.init()
+voices = engine.getProperty('voices')
 compSpeak(engine,"")
 engine.setProperty('voice', voices[69].id)
 engine.setProperty('rate', 125)
