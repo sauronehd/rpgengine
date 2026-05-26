@@ -8,7 +8,7 @@ print(sd.query_devices())
 # Show just the current default input/output
 Print("Outputs are:")
 print(sd.query_devices(kind='output'))
-Print("Inputs are:")
+print("Inputs are:")
 print(sd.query_devices(kind='input'))
 device = input("Choose a Device:")
 sd.default.device.output = device
