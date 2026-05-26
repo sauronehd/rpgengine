@@ -1,23 +1,14 @@
-from xml.dom.expatbuilder import theDOMImplementation
-
-from audioFuncs import *
-import pyttsx3
 import sounddevice as sd
+import numpy as np
 
-# List all devices
-print(sd.query_devices())
+sd.default.device = (1, 1)
+sd.default.samplerate = 48000
 
-# Show just the current default input/output
-print("Outputs are:")
-print(sd.query_devices(kind='output'))
-print("Inputs are:")
-print(sd.query_devices(kind='input'))
-device = input("Choose a Device:")
-sd.default.device.output = device
+# Play a simple tone
+duration = 2
+freq = 440
+t = np.linspace(0, duration, int(48000 * duration))
+tone = (np.sin(2 * np.pi * freq * t) * 0.3).astype('float32')
 
-engine = pyttsx3.init()
-voices = engine.getProperty('voices')
-compSpeak(engine,"")
-engine.setProperty('voice', voices[69].id)
-engine.setProperty('rate', 125)
-compSpeak(engine,"Hello it's me")
+sd.play(tone, samplerate=48000, device=1)
+sd.wait()
