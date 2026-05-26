@@ -1,3 +1,5 @@
+from xml.dom.expatbuilder import theDOMImplementation
+
 from audioFuncs import *
 import pyttsx3
 import sounddevice as sd
@@ -6,7 +8,7 @@ import sounddevice as sd
 print(sd.query_devices())
 
 # Show just the current default input/output
-Print("Outputs are:")
+print("Outputs are:")
 print(sd.query_devices(kind='output'))
 print("Inputs are:")
 print(sd.query_devices(kind='input'))
