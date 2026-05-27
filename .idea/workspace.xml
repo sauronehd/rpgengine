@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="mopre claude mic testing" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="compsepkea works as intended">
+      <change afterPath="$PROJECT_DIR$/mictesting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testingGrounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/thespeakworkshere.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,15 +154,7 @@
       <workItem from="1779539015001" duration="3004000" />
       <workItem from="1779823529787" duration="15000" />
       <workItem from="1779830429765" duration="4389000" />
-      <workItem from="1779839075690" duration="3018000" />
-    </task>
-    <task id="LOCAL-00005" summary="debugging">
-      <option name="closed" value="true" />
-      <created>1773092104316</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1773092104316</updated>
+      <workItem from="1779839075690" duration="4429000" />
     </task>
     <task id="LOCAL-00006" summary="debugging and more testing">
       <option name="closed" value="true" />
@@ -537,7 +540,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779898223051</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="compsepkea works as intended">
+      <option name="closed" value="true" />
+      <created>1779898704266</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1779898704268</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +566,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="to string" />
     <MESSAGE value="print normal" />
     <MESSAGE value="couple of things" />
     <MESSAGE value="sample change" />
@@ -580,6 +590,7 @@
     <MESSAGE value="import fix" />
     <MESSAGE value="testing grounds rework" />
     <MESSAGE value="mopre claude mic testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="mopre claude mic testing" />
+    <MESSAGE value="compsepkea works as intended" />
+    <option name="LAST_COMMIT_MESSAGE" value="compsepkea works as intended" />
   </component>
 </project>
