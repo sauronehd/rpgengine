@@ -1,4 +1,5 @@
 from audioFuncs import *
+import  pyttsx3
 sd.default.device = (1,1)
 engine = pyttsx3.init()
 
