@@ -15,3 +15,10 @@ print(f"Found at index: {device_index}")
 
 sd.default.device = (device_index, device_index)
 sd.default.samplerate = 48000
+engine = pyttsx3.init()
+voices = engine.getProperty('voices')
+print(voices)
+engine.setProperty('voice', voices[69].id)
+engine.setProperty('rate', 125)
+compSpeak(engine,"")
+compSpeak(engine,"Hello World")
