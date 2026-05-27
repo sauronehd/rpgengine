@@ -1,4 +1,6 @@
-import sounddevice as sd
-
-device_info = sd.query_devices(1)
-print(device_info)
+from audioFuncs import *
+sd.default.device = (1,1)
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[69].id)
+engine.setProperty('rate', 125)
+compSpeak(engine, "Hello World")

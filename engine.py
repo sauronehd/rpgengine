@@ -16,7 +16,7 @@ print(voices)
 engine.setProperty('voice', voices[69].id)
 engine.setProperty('rate', 125)
 compSpeak(engine,"")
-sd.default.device.output = (1,1)
+sd.default.device = (1,1)
 
 
 while True:
