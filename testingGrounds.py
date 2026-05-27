@@ -7,7 +7,11 @@ import numpy as np
 
 import os
 import subprocess
-
+def get_device_by_name(name):
+    for i, dev in enumerate(sd.query_devices()):
+        if name.lower() in dev['name'].lower():
+            return i
+    return None
 def get_alsa_card_number(name):
     result = subprocess.run(['aplay', '-l'], capture_output=True, text=True)
     for line in result.stdout.splitlines():
