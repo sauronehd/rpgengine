@@ -1,6 +1,27 @@
 import sounddevice as sd
 import time
 #force push
+import subprocess
+
+
+def compSpeak(engine, text, card):
+    print(f"Speaking: {text}")
+    start = time.time()
+
+    # generate audio with espeak
+    espeak_proc = subprocess.run(
+        ['espeak', text, '--stdout'],
+        capture_output=True
+    )
+
+    # pipe directly to the correct device
+    subprocess.run(
+        ['aplay', '-D', f'plughw:{card},0'],
+        input=espeak_proc.stdout
+    )
+
+    elapsed = time.time() - start
+    print(f"Finished speaking in {elapsed:.2f} seconds")
 def record_transcribe(model):
     duration = 5
     sample_rate = 48000
@@ -29,16 +50,3 @@ def record_transcribe(model):
     print(result["text"])
     return result["text"]
 
-def compSpeak(engine,text):
-    start = time.time()
-
-    words = len(text.split())
-    rate = engine.getProperty('rate')  # words per minute
-    duration = (words / rate) * 60  # convert to seconds
-    print(f"Speaking: {text}")
-    engine.say(text)
-    engine.runAndWait()
-    elapsed = time.time() - start
-    print(f"runAndWait took {elapsed:.2f} seconds")
-
-    print("Finished speaking")
