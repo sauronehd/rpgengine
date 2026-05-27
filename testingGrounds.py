@@ -1,6 +1,6 @@
 from audioFuncs import *
 import  pyttsx3
-sd.default.device = (1,1)
+sd.default.device.output = (1,1)
 engine = pyttsx3.init()
 
 voices = engine.getProperty('voices')
