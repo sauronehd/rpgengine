@@ -2,7 +2,6 @@ from detectiontools import *
 from nodetree import *
 from audioFuncs import *
 import whisper
-import pyttsx3
 from pinCalls import *
 import sys
 import RPi.GPIO as GPIO
@@ -10,19 +9,21 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
+card = get_alsa_card_number('google')
+os.environ['AUDIODEV'] = f'plughw:{card},0'
+import  pyttsx3
+
 engine = pyttsx3.init()
-voices = engine.getProperty('voices')
-print(voices)
-engine.setProperty('voice', voices[69].id)
-engine.setProperty('rate', 125)
-compSpeak(engine,"")
+sd.default.samplerate = 48000
+
+card = get_alsa_card_number('google')
 sd.default.device = (1,1)
 
 
 while True:
     outputCall(currentNode.outputs)
     print(currentNode.outputs)
-    compSpeak(engine,currentNode.prompt)
+    compSpeak(engine,currentNode.prompt,card)
 
     #This is placed so that you will hear and experience the final outputs before the game ends
     if currentNode.children == {}:

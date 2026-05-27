@@ -50,3 +50,12 @@ def record_transcribe(model):
     print(result["text"])
     return result["text"]
 
+
+def get_alsa_card_number(name):
+    result = subprocess.run(['aplay', '-l'], capture_output=True, text=True)
+    for line in result.stdout.splitlines():
+        if name.lower() in line.lower():
+            # extract card number
+            card_num = line.split(':')[0].replace('card', '').strip()
+            return card_num
+    return None
