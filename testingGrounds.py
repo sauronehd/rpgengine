@@ -21,7 +21,7 @@ card = get_alsa_card_number('google')
 os.environ['AUDIODEV'] = f'plughw:{card},0'
 
 engine = pyttsx3.init()
-sd.default.device = (device_index, device_index)
+#sd.default.device = (device_index, device_index)
 sd.default.samplerate = 48000
 
 

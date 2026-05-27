@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="testing grounds rework">
-      <change beforePath="$PROJECT_DIR$/testingGrounds.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingGrounds.py" afterDir="false" />
-    </list>
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="mopre claude mic testing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +143,7 @@
       <workItem from="1779539015001" duration="3004000" />
       <workItem from="1779823529787" duration="15000" />
       <workItem from="1779830429765" duration="4389000" />
-      <workItem from="1779839075690" duration="1982000" />
+      <workItem from="1779839075690" duration="2341000" />
     </task>
     <task id="LOCAL-00001" summary="testing is a record_transcribe test">
       <option name="closed" value="true" />
@@ -523,7 +521,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779896858862</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="mopre claude mic testing">
+      <option name="closed" value="true" />
+      <created>1779897313328</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1779897313328</updated>
+    </task>
+    <task id="LOCAL-00049" summary="mopre claude mic testing">
+      <option name="closed" value="true" />
+      <created>1779897553596</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1779897553596</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="audio print" />
     <MESSAGE value="to string" />
     <MESSAGE value="print normal" />
     <MESSAGE value="couple of things" />
@@ -566,6 +579,7 @@
     <MESSAGE value="bug fix" />
     <MESSAGE value="import fix" />
     <MESSAGE value="testing grounds rework" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing grounds rework" />
+    <MESSAGE value="mopre claude mic testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="mopre claude mic testing" />
   </component>
 </project>
