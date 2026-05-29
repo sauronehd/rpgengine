@@ -21,5 +21,7 @@ try:
         except Exception as e:
             print(f"Error outputting to pin {i}: {e}")
 
+    wait = input("Press enter to continue...")
+
 finally:
     GPIO.cleanup()

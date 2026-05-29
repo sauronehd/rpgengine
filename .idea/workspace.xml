@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="pin write debug script">
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="using valid pins only">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pinwrite.py" beforeDir="false" afterPath="$PROJECT_DIR$/pinwrite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,31 +155,7 @@
       <workItem from="1779830429765" duration="4389000" />
       <workItem from="1779839075690" duration="5186000" />
       <workItem from="1779909905714" duration="3849000" />
-      <workItem from="1780083696613" duration="376000" />
-    </task>
-    <task id="LOCAL-00008" summary="more debuggin">
-      <option name="closed" value="true" />
-      <created>1773092754249</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1773092754250</updated>
-    </task>
-    <task id="LOCAL-00009" summary="more debuggin">
-      <option name="closed" value="true" />
-      <created>1773092940793</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1773092940793</updated>
-    </task>
-    <task id="LOCAL-00010" summary="force [ush">
-      <option name="closed" value="true" />
-      <created>1773093262889</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1773093262889</updated>
+      <workItem from="1780083696613" duration="780000" />
     </task>
     <task id="LOCAL-00011" summary="why">
       <option name="closed" value="true" />
@@ -548,7 +525,31 @@
       <option name="project" value="LOCAL" />
       <updated>1780083935281</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="pin write debug script">
+      <option name="closed" value="true" />
+      <created>1780084078570</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1780084078571</updated>
+    </task>
+    <task id="LOCAL-00058" summary="no longer attempting pin 0">
+      <option name="closed" value="true" />
+      <created>1780084213207</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1780084213207</updated>
+    </task>
+    <task id="LOCAL-00059" summary="using valid pins only">
+      <option name="closed" value="true" />
+      <created>1780084287239</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1780084287239</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,8 +567,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sample change" />
-    <MESSAGE value="device 2" />
     <MESSAGE value="device 2, 2 channels" />
     <MESSAGE value="change rate, some debugging" />
     <MESSAGE value="2 channel test" />
@@ -591,6 +590,8 @@
     <MESSAGE value="compsepkea works as intended" />
     <MESSAGE value="testing record transcribe" />
     <MESSAGE value="pin write debug script" />
-    <option name="LAST_COMMIT_MESSAGE" value="pin write debug script" />
+    <MESSAGE value="no longer attempting pin 0" />
+    <MESSAGE value="using valid pins only" />
+    <option name="LAST_COMMIT_MESSAGE" value="using valid pins only" />
   </component>
 </project>
