@@ -5,13 +5,13 @@ try:
     for i in range (40):
         try:
             GPIO.setup(i, GPIO.OUT)
-        except error as e:
-            print(e)
+        finally:
+            print(f"Error in setting up {i}")
 
     for i in range(40):
         try:
             GPIO.output(i, GPIO.HIGH)
-        except error as e:
-            print(e)
+        finally:
+            print(f"Error in outputting to {i}")
 finally:
     GPIO.cleanup()

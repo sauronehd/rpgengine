@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="testing record transcribe">
-      <change afterPath="$PROJECT_DIR$/pinwrite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="pin write debug script">
+      <change beforePath="$PROJECT_DIR$/pinwrite.py" beforeDir="false" afterPath="$PROJECT_DIR$/pinwrite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,15 +154,7 @@
       <workItem from="1779830429765" duration="4389000" />
       <workItem from="1779839075690" duration="5186000" />
       <workItem from="1779909905714" duration="3849000" />
-      <workItem from="1780083696613" duration="211000" />
-    </task>
-    <task id="LOCAL-00007" summary="more debuggin">
-      <option name="closed" value="true" />
-      <created>1773092585672</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1773092585672</updated>
+      <workItem from="1780083696613" duration="376000" />
     </task>
     <task id="LOCAL-00008" summary="more debuggin">
       <option name="closed" value="true" />
@@ -549,7 +540,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779899947442</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="pin write debug script">
+      <option name="closed" value="true" />
+      <created>1780083935280</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1780083935281</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,7 +566,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="couple of things" />
     <MESSAGE value="sample change" />
     <MESSAGE value="device 2" />
     <MESSAGE value="device 2, 2 channels" />
@@ -592,6 +590,7 @@
     <MESSAGE value="mopre claude mic testing" />
     <MESSAGE value="compsepkea works as intended" />
     <MESSAGE value="testing record transcribe" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing record transcribe" />
+    <MESSAGE value="pin write debug script" />
+    <option name="LAST_COMMIT_MESSAGE" value="pin write debug script" />
   </component>
 </project>
