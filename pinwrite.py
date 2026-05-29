@@ -2,7 +2,7 @@
 import RPi.GPIO as GPIO
 try:
     GPIO.setmode(GPIO.BOARD)
-    for i in range (40):
+    for i in range (1,40):
         try:
             GPIO.setup(i, GPIO.OUT)
         finally:
