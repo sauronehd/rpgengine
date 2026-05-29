@@ -1,17 +1,25 @@
-
 import RPi.GPIO as GPIO
+
+# Valid BOARD mode GPIO pins (excludes power, ground, and reserved pins)
+VALID_PINS = [3, 5, 7, 8, 10, 11, 12, 13, 15, 16, 18, 19, 21, 22, 23, 24, 26, 29, 31, 32, 33, 35, 36, 37, 38, 40]
+
 try:
     GPIO.setmode(GPIO.BOARD)
-    for i in range (1,40):
+    GPIO.setwarnings(False)
+
+    for i in VALID_PINS:
         try:
             GPIO.setup(i, GPIO.OUT)
-        finally:
-            print(f"Error in setting up {i}")
+            print(f"Set up pin {i}")
+        except Exception as e:
+            print(f"Error setting up pin {i}: {e}")
 
-    for i in range(40):
+    for i in VALID_PINS:
         try:
             GPIO.output(i, GPIO.HIGH)
-        finally:
-            print(f"Error in outputting to {i}")
+            print(f"Output HIGH on pin {i}")
+        except Exception as e:
+            print(f"Error outputting to pin {i}: {e}")
+
 finally:
     GPIO.cleanup()
