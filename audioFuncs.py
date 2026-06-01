@@ -4,7 +4,7 @@ import time
 import subprocess
 
 
-def compSpeak(engine, text, card):
+def compSpeak(text, card):
     print(f"Speaking: {text}")
     start = time.time()
 
@@ -22,6 +22,8 @@ def compSpeak(engine, text, card):
 
     elapsed = time.time() - start
     print(f"Finished speaking in {elapsed:.2f} seconds")
+
+
 def record_transcribe(model):
     duration = 5
     sample_rate = 48000

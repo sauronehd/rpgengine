@@ -24,7 +24,7 @@ while True:
     time.sleep(3)
     outputCall(currentNode.outputs)
     print(currentNode.outputs)
-    compSpeak(engine,currentNode.prompt,card)
+    compSpeak(currentNode.prompt,card)
 
     #This is placed so that you will hear and experience the final outputs before the game ends
     if currentNode.children == {}:
@@ -40,8 +40,8 @@ while True:
     else:
         newnode = returnnode(currentNode.children,response)
         while newnode == False:
-            compSpeak(engine,"Sorry, I didnt understand that")
-            compSpeak(engine,"What would you like to do?")
+            compSpeak("Sorry, I didnt understand that",card)
+            compSpeak("What would you like to do?",card)
 
             response = record_transcribe(model)
             print("The repsonse is: ")

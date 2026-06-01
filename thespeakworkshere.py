@@ -28,4 +28,4 @@ engine = pyttsx3.init()
 sd.default.samplerate = 48000
 
 card = get_alsa_card_number('google')
-compSpeak(engine, "Hello World", card)
+compSpeak( "Hello World", card)
