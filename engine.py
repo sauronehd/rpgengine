@@ -17,7 +17,7 @@ engine = pyttsx3.init()
 sd.default.samplerate = 48000
 
 card = get_alsa_card_number('google')
-sd.default.device = (1,1)
+sd.default.device = (3,1)
 
 
 while True:
