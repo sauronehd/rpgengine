@@ -6,8 +6,8 @@ class pins(Enum):
     fan = 19
     cold = 15
     heat = 13
-    speaker = "speaker"
-    subwoofer = "subwoofer"
+    speaker = 30
+    subwoofer = 31
 
 #May have to backtrack later and use pinState.on.value for things because of how enums work
 #Im unsure.

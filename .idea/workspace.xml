@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="listing devices for the mic">
-      <change beforePath="$PROJECT_DIR$/mictesting.py" beforeDir="false" afterPath="$PROJECT_DIR$/mictesting.py" afterDir="false" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="force push">
+      <change beforePath="$PROJECT_DIR$/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pinCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pinCalls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,23 +157,7 @@
       <workItem from="1779909905714" duration="3849000" />
       <workItem from="1780083696613" duration="1390000" />
       <workItem from="1780093984635" duration="256000" />
-      <workItem from="1780348143242" duration="384000" />
-    </task>
-    <task id="LOCAL-00013" summary="device fetch patch">
-      <option name="closed" value="true" />
-      <created>1773157985192</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1773157985192</updated>
-    </task>
-    <task id="LOCAL-00014" summary="force push">
-      <option name="closed" value="true" />
-      <created>1773158029748</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1773158029748</updated>
+      <workItem from="1780348143242" duration="875000" />
     </task>
     <task id="LOCAL-00015" summary="attempt">
       <option name="closed" value="true" />
@@ -550,7 +535,23 @@
       <option name="project" value="LOCAL" />
       <updated>1780348473145</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="using device 2 for input">
+      <option name="closed" value="true" />
+      <created>1780348550674</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1780348550674</updated>
+    </task>
+    <task id="LOCAL-00063" summary="force push">
+      <option name="closed" value="true" />
+      <created>1780348572871</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1780348572871</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,11 +569,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2 channel test" />
     <MESSAGE value="hw:2,0 test" />
     <MESSAGE value="default device" />
     <MESSAGE value="pin test" />
-    <MESSAGE value="force push" />
     <MESSAGE value="added a cleanup" />
     <MESSAGE value="device swithc push" />
     <MESSAGE value="push for rework for story" />
@@ -593,6 +592,8 @@
     <MESSAGE value="using valid pins only" />
     <MESSAGE value="wait loop" />
     <MESSAGE value="listing devices for the mic" />
-    <option name="LAST_COMMIT_MESSAGE" value="listing devices for the mic" />
+    <MESSAGE value="using device 2 for input" />
+    <MESSAGE value="force push" />
+    <option name="LAST_COMMIT_MESSAGE" value="force push" />
   </component>
 </project>

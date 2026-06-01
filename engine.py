@@ -5,7 +5,7 @@ import whisper
 from pinCalls import *
 import sys
 import RPi.GPIO as GPIO
-
+import time
 GPIO.setmode(GPIO.BOARD)
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
@@ -21,6 +21,7 @@ sd.default.device = (3,1)
 
 
 while True:
+    time.sleep(3)
     outputCall(currentNode.outputs)
     print(currentNode.outputs)
     compSpeak(engine,currentNode.prompt,card)
@@ -31,19 +32,17 @@ while True:
 
     response = record_transcribe(model)
     response = response.lower()
-    print("The repsonse is: ")
+    print("The response is: ")
     print(response)
     #change evaluate choice
-    if currentNode.children.keys().__len__() == 0:
+    if currentNode.children.keys().__len__() == 1:
         newnode = currentnode.children.get(currentNode.children.keys()[0])
     else:
         newnode = returnnode(currentNode.children,response)
         while newnode == False:
-            #replace with tts output
             compSpeak(engine,"Sorry, I didnt understand that")
             compSpeak(engine,"What would you like to do?")
 
-            #replace with stt input mike
             response = record_transcribe(model)
             print("The repsonse is: ")
             print(response)
@@ -51,6 +50,7 @@ while True:
             newnode = returnnode(currentNode.children,response)
 
     currentNode = newnode
+    pinReset()
 
 engine.stop()
 GPIO.cleanup()
