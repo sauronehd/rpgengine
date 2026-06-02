@@ -1,31 +1,31 @@
 from audioFuncs import *
-import sounddevice as sd
-import numpy as np
-
-# Find device by name instead of index
-
-import os
 import subprocess
-def get_device_by_name(name):
-    for i, dev in enumerate(sd.query_devices()):
-        if name.lower() in dev['name'].lower():
-            return i
-    return None
+
 def get_alsa_card_number(name):
     result = subprocess.run(['aplay', '-l'], capture_output=True, text=True)
     for line in result.stdout.splitlines():
         if name.lower() in line.lower():
-            # extract card number
             card_num = line.split(':')[0].replace('card', '').strip()
             return card_num
     return None
 
 card = get_alsa_card_number('google')
-os.environ['AUDIODEV'] = f'plughw:{card},0'
-import  pyttsx3
+print(f"Card number: {card}")
+print(f"Using device: plughw:{card},0")
 
-engine = pyttsx3.init()
-sd.default.samplerate = 48000
+# Test aplay directly
+result = subprocess.run(
+    ['espeak', 'Hello World', '--stdout'],
+    capture_output=True
+)
+print(f"espeak output size: {len(result.stdout)} bytes")
 
-card = get_alsa_card_number('google')
-compSpeak( "Hello World", card)
+aplay_result = subprocess.run(
+    ['aplay', '-D', f'plughw:{card},0', '-v'],
+    input=result.stdout,
+    capture_output=True,
+    text=False
+)
+print(f"aplay stdout: {aplay_result.stdout}")
+print(f"aplay stderr: {aplay_result.stderr}")
+print(f"aplay return code: {aplay_result.returncode}")

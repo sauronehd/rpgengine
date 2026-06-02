@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="It should be fully functional now">
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="fixing compspeak again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,15 +156,8 @@
       <workItem from="1779909905714" duration="3849000" />
       <workItem from="1780083696613" duration="1390000" />
       <workItem from="1780093984635" duration="256000" />
-      <workItem from="1780348143242" duration="1588000" />
-    </task>
-    <task id="LOCAL-00016" summary="1 channel">
-      <option name="closed" value="true" />
-      <created>1773171262473</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1773171262474</updated>
+      <workItem from="1780348143242" duration="2422000" />
+      <workItem from="1780352521907" duration="6000" />
     </task>
     <task id="LOCAL-00017" summary="audio print">
       <option name="closed" value="true" />
@@ -550,7 +543,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780349038626</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="fixing compspeak again">
+      <option name="closed" value="true" />
+      <created>1780349971980</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1780349971981</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="default device" />
     <MESSAGE value="pin test" />
     <MESSAGE value="added a cleanup" />
     <MESSAGE value="device swithc push" />
@@ -593,6 +593,7 @@
     <MESSAGE value="using device 2 for input" />
     <MESSAGE value="force push" />
     <MESSAGE value="It should be fully functional now" />
-    <option name="LAST_COMMIT_MESSAGE" value="It should be fully functional now" />
+    <MESSAGE value="fixing compspeak again" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing compspeak again" />
   </component>
 </project>
