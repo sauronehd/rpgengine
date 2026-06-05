@@ -9,14 +9,13 @@ import time
 GPIO.setmode(GPIO.BOARD)
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
-card = get_alsa_card_number('google')
 os.environ['AUDIODEV'] = f'plughw:{card},0'
 import  pyttsx3
 
 engine = pyttsx3.init()
 sd.default.samplerate = 48000
 
-card = get_alsa_card_number('google')
+card = 2
 sd.default.device = (3,1)
 
 
