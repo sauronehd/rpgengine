@@ -1,5 +1,5 @@
 
-from pincontrol import *
+from pinCalls import *
 print("Starting")
 GPIO.setmode(GPIO.BOARD)
 pinOutSet()
