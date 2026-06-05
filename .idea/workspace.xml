@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="1 channel, new device">
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="fixed arguements again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinCalls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pinCalls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pinwrite.py" beforeDir="false" afterPath="$PROJECT_DIR$/pinwrite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,39 +159,7 @@
       <workItem from="1780348143242" duration="2422000" />
       <workItem from="1780352521907" duration="6000" />
       <workItem from="1780423422013" duration="2301000" />
-      <workItem from="1780679762722" duration="828000" />
-    </task>
-    <task id="LOCAL-00021" summary="sample change">
-      <option name="closed" value="true" />
-      <created>1773171794624</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1773171794624</updated>
-    </task>
-    <task id="LOCAL-00022" summary="device 2">
-      <option name="closed" value="true" />
-      <created>1773171874103</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1773171874103</updated>
-    </task>
-    <task id="LOCAL-00023" summary="device 2, 2 channels">
-      <option name="closed" value="true" />
-      <created>1773171913752</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1773171913752</updated>
-    </task>
-    <task id="LOCAL-00024" summary="change rate, some debugging">
-      <option name="closed" value="true" />
-      <created>1773172089112</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1773172089112</updated>
+      <workItem from="1780679762722" duration="1671000" />
     </task>
     <task id="LOCAL-00025" summary="change rate, some debugging">
       <option name="closed" value="true" />
@@ -556,7 +521,39 @@
       <option name="project" value="LOCAL" />
       <updated>1780680345730</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Cleanup, double checking pin writing">
+      <option name="closed" value="true" />
+      <created>1780680613450</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1780680613450</updated>
+    </task>
+    <task id="LOCAL-00071" summary="correct import">
+      <option name="closed" value="true" />
+      <created>1780680679515</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1780680679515</updated>
+    </task>
+    <task id="LOCAL-00072" summary="fixed arguements">
+      <option name="closed" value="true" />
+      <created>1780680709773</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1780680709773</updated>
+    </task>
+    <task id="LOCAL-00073" summary="fixed arguements again">
+      <option name="closed" value="true" />
+      <created>1780680835485</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1780680835485</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,10 +571,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="push for rework for story" />
-    <MESSAGE value="Simple testinggrounds output" />
-    <MESSAGE value="Using value" />
-    <MESSAGE value="fan is now 13" />
     <MESSAGE value="adding the node tree" />
     <MESSAGE value="cooler is pin 15" />
     <MESSAGE value="retesting compspeak for certainty" />
@@ -599,6 +592,10 @@
     <MESSAGE value="fixing compspeak again - new cable" />
     <MESSAGE value="2 channels instead of 1" />
     <MESSAGE value="1 channel, new device" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 channel, new device" />
+    <MESSAGE value="Cleanup, double checking pin writing" />
+    <MESSAGE value="correct import" />
+    <MESSAGE value="fixed arguements" />
+    <MESSAGE value="fixed arguements again" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed arguements again" />
   </component>
 </project>
