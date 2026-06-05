@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="trying all pins - fan debugging - seeing error" />
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="changing again">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,23 +159,7 @@
       <workItem from="1780348143242" duration="2422000" />
       <workItem from="1780352521907" duration="6000" />
       <workItem from="1780423422013" duration="2301000" />
-      <workItem from="1780679762722" duration="2022000" />
-    </task>
-    <task id="LOCAL-00027" summary="hw:2,0 test">
-      <option name="closed" value="true" />
-      <created>1773173192131</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1773173192131</updated>
-    </task>
-    <task id="LOCAL-00028" summary="default device">
-      <option name="closed" value="true" />
-      <created>1773173618341</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1773173618341</updated>
+      <workItem from="1780679762722" duration="3391000" />
     </task>
     <task id="LOCAL-00029" summary="pin test">
       <option name="closed" value="true" />
@@ -551,7 +537,23 @@
       <option name="project" value="LOCAL" />
       <updated>1780681788234</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="trying all pins - fan debugging - seeing error">
+      <option name="closed" value="true" />
+      <created>1780681853279</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1780681853279</updated>
+    </task>
+    <task id="LOCAL-00077" summary="changing again">
+      <option name="closed" value="true" />
+      <created>1780682727363</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1780682727363</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +571,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="retesting compspeak for certainty" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="import fix" />
     <MESSAGE value="testing grounds rework" />
@@ -594,6 +595,7 @@
     <MESSAGE value="fixed arguements again" />
     <MESSAGE value="trying all pins - fan debugging" />
     <MESSAGE value="trying all pins - fan debugging - seeing error" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying all pins - fan debugging - seeing error" />
+    <MESSAGE value="changing again" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing again" />
   </component>
 </project>

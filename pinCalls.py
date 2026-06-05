@@ -2,11 +2,10 @@
 from enum import Enum
 import RPi.GPIO as GPIO
 class pins(Enum):
-    fan = 19
+    fan = 31
     cold = 15
     heat = 13
-    speaker = 30
-    subwoofer = 31
+
 
 #May have to backtrack later and use pinState.on.value for things because of how enums work
 #Im unsure.
