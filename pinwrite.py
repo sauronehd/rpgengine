@@ -5,7 +5,6 @@ GPIO.setmode(GPIO.BOARD)
 pinOutSet()
 outputCall([[pins.heat,pinState.on],[pins.fan,pinState.on],[pins.cold,pinState.on]])
 wait = input("Press Enter to continue...")
-GPIO.cleanup()
 print("Tryong all pins now")
 
 newpins = []
@@ -25,3 +24,5 @@ for pin in newpins:
     except:
         print(f"Error on pin {pin}")
 wait = input("Press Enter to continue...")
+
+GPIO.cleanup()

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="fixed arguements again">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1bce6f98-6373-4e93-956b-4584f9105c34" name="Changes" comment="trying all pins - fan debugging - seeing error" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -159,23 +157,7 @@
       <workItem from="1780348143242" duration="2422000" />
       <workItem from="1780352521907" duration="6000" />
       <workItem from="1780423422013" duration="2301000" />
-      <workItem from="1780679762722" duration="1671000" />
-    </task>
-    <task id="LOCAL-00025" summary="change rate, some debugging">
-      <option name="closed" value="true" />
-      <created>1773172101450</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1773172101450</updated>
-    </task>
-    <task id="LOCAL-00026" summary="2 channel test">
-      <option name="closed" value="true" />
-      <created>1773173058161</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1773173058161</updated>
+      <workItem from="1780679762722" duration="2022000" />
     </task>
     <task id="LOCAL-00027" summary="hw:2,0 test">
       <option name="closed" value="true" />
@@ -553,7 +535,23 @@
       <option name="project" value="LOCAL" />
       <updated>1780680835485</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="trying all pins - fan debugging">
+      <option name="closed" value="true" />
+      <created>1780681721221</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1780681721221</updated>
+    </task>
+    <task id="LOCAL-00075" summary="trying all pins - fan debugging - seeing error">
+      <option name="closed" value="true" />
+      <created>1780681788234</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1780681788234</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,8 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding the node tree" />
-    <MESSAGE value="cooler is pin 15" />
     <MESSAGE value="retesting compspeak for certainty" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="import fix" />
@@ -596,6 +592,8 @@
     <MESSAGE value="correct import" />
     <MESSAGE value="fixed arguements" />
     <MESSAGE value="fixed arguements again" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed arguements again" />
+    <MESSAGE value="trying all pins - fan debugging" />
+    <MESSAGE value="trying all pins - fan debugging - seeing error" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying all pins - fan debugging - seeing error" />
   </component>
 </project>
