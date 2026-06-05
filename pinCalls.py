@@ -1,7 +1,6 @@
 #use this to make callable functions for outputs(fans, heater, ect)
 from enum import Enum
 import RPi.GPIO as GPIO
-GPIO.setmode(GPIO.BOARD)
 class pins(Enum):
     fan = 19
     cold = 15

@@ -10,9 +10,7 @@ GPIO.setmode(GPIO.BOARD)
 currentNode = nodeTree.beginning
 model = whisper.load_model("tiny")
 os.environ['AUDIODEV'] = f'plughw:{card},0'
-import  pyttsx3
 
-engine = pyttsx3.init()
 sd.default.samplerate = 48000
 
 card = 2
@@ -20,8 +18,8 @@ sd.default.device = (3,1)
 
 
 while True:
-    time.sleep(3)
     outputCall(currentNode.outputs)
+    time.sleep(3)
     print(currentNode.outputs)
     compSpeak(currentNode.prompt,card)
 
