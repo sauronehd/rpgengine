@@ -17,8 +17,8 @@ print(newpins)
 for pin in newpins:
     try:
         GPIO.setup(pin,GPIO.OUT)
-    except:
-        print(f"Error on pin {pin}")
+    except Exception as e:
+        print(f"Error on pin {pin}: {e}")
 for pin in newpins:
     try:
         GPIO.output(pin, GPIO.OUT)
